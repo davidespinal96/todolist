@@ -14,7 +14,7 @@ class ToDoController extends Controller{
         }
         else{
             $search = $request->input('search');
-            $tasks = Task::where('content','LIKE','%'.$search.'%')->paginate(4);
+            $tasks = Task::where('content','LIKE','%'.$search.'%')->where(['user_id'=>Auth::user()->id])->paginate(4);
             $tasks->withPath('?search='.$search);
         }
 
