@@ -15,31 +15,7 @@
         <button type="submit" class="waves-effect waves-light btn">Logout</button>
       </p>
     </form>
-    @isAdmin
-    <ul class="collapsible">
-      <li>
-        <div class="collapsible-header">
-          <i class="material-icons">person_add</i>
-          Invitations
-          <span class="new badge red">4</span></div>
-          <div class="collapsible-body">
-            <p>
-              <span class="red-text"> <b>Buzz McCallister</b></span> <a href="">accept</a> | <a href="">deny</a>
-            </p>
-            <p>
-              <span class="red-text"> <b>Fuller McCallister</b></span> <a href="">accept</a> | <a href="">deny</a>
-            </p>
-            <p>
-              <span class="red-text"> <b>Harry Lime</b></span> <a href="">accept</a> | <a href="">deny</a>
-            </p>
-            <p>
-              <span class="red-text"> <b>Marv Merchants</b></span> <a href="">accept</a> | <a href="">deny</a>
-            </p>
-          </div>
-      </li>
-    </ul>
-    @endisAdmin
-    <h1 class="center-align green-text text-darken-4">To-do list</h1>
+    <h1 class="center-align green-text text-darken-4">To Do List</h1>
     
     @yield('content')
 
